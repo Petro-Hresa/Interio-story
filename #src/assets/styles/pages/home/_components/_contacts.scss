@@ -1,0 +1,146 @@
+.contacts {
+    padding: 50px 0;
+    background-color: $Background-2;
+    color:$colorText-3;
+	/* .contacts__container */
+	&__container {
+        @media screen and (max-width: 1920px) {
+           padding: 0 30px;
+        }
+	}
+	/* .contacts__row */
+	&__row {
+        justify-content: space-between !important;
+	}
+}
+
+
+
+.address {
+    margin-bottom: 40px;
+
+	/* .address__title */
+	&__title {
+        @extend .attainment__title;
+        margin-bottom: 30px;
+        @media screen and (max-width: $xxl) {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+      
+
+	}
+	/* .address__list */
+	&__list {
+        @extend .choose__list-marked;
+        color: $colorText-4; 
+	}
+}
+
+
+
+.contact {
+    margin-bottom: 40px;
+	/* .contact__title */
+	&__title {
+        @extend .address__title;
+        
+       
+	}
+	/* .contact__container */
+	&__container {
+      
+        display: flex;
+	}
+	/* .contact__name */
+	&__name {
+        color:$colorText-4;
+        margin-right: 8px;
+	}
+	/* .contact__link */
+	&__link {
+        color:inherit;
+	}
+}
+
+
+
+.subscribe {
+
+	/* .subscribe__title */
+	&__title {
+        @extend .address__title;
+        text-align: left !important;
+	}
+	/* .subscribe__form */
+	&__form {
+	}
+	/* .subscribe__form-wrap */
+	&__form-wrap {
+        position: relative;
+	}
+	/* .subscribe__icon */
+	&__icon {
+        position: absolute;
+        top: 13px;
+        left: 1px;
+        margin-right: 7px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #c4c4c4;
+	}
+
+	/* .subscribe__input */
+	&__input {
+        padding-left: 39px;
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        padding: 12px 29px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $colorText-3 ;
+        background-color: transparent;
+        background-image: none;
+        border-radius: 0;
+        -webkit-appearance: none;
+        transition: .3s ease-in-out;
+        border: 0;
+        border-bottom: 1px solid #c4c4c4;
+        outline:none;
+	}
+	/* .subscribe__label */
+	&__label {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        padding-left: 39px;
+        padding-right: 19px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        pointer-events: none;
+        text-align: left;
+        z-index: 9;
+        transition: .25s;
+        will-change: transform;
+        transform: translateY(-50%);
+	}
+	/* .subscribe__button-wrap */
+	&__button-wrap {
+        margin-top: 40px;
+
+	}
+	/* .subscribe__button */
+	&__button {
+        @extend .button;
+		color: $colorText-3;
+		background-color: $Background-1;
+		border-color: $Background-1;
+	}
+}

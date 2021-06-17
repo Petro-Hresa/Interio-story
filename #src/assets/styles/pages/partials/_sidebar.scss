@@ -5,16 +5,17 @@
 	flex-direction: column;
     color:$colorText-2;
 	min-height: 320px;
-	height: 100vh;
+	max-height: 100vh;
 	overflow-y: auto !important;
-	position: sticky ;
+	position: sticky !important;
 	top: 0;
 	left: 0;
 	z-index: 10000;
 	background-color: $Background-4;
+	// border: 1px solid #000;
 
     @media screen and (max-width:$lg) {
-        position: fixed;
+        position: fixed !important;
         width: 200px;
         transform: translateX(-100%);
         transition:transform .3s;

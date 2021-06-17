@@ -1,19 +1,36 @@
 .header{
+    width: 100%;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // transform: translateY(-150px);
+   
 
-        @media screen and (min-width:$lg){
-            display: none;
-        }
+        &__inner{
+            width: 100%;
+            background-color: rgb(235, 40, 40);
+            z-index: 10000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: transform .3s linear;
+            // transform: translateX(250px) !important;;
         
-        @media screen and (max-width:$lg){
-            padding: 20px 0;
-            margin: 0 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+                @media screen and (min-width:$lg){
+                    display: none;
+                }
+                
+                @media screen and (max-width:$lg){
+                    padding: 20px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+        
+                @media screen and (max-width:$md){
+                    padding: 15px;
+                }
 
-        @media screen and (max-width:$md){
-            padding: 15px 0;
         }
         
 
