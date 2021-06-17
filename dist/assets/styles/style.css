@@ -13370,6 +13370,17 @@ template {
 
 /* 2-Partials*/
 
+.header-active {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    transition: -webkit-transform .3s linear;
+    transition: transform .3s linear;
+    transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
 .header {
     width: 100%;
   /* .header__burger */
@@ -13379,14 +13390,21 @@ template {
 
 .header__inner {
     width: 100%;
-    background-color: #eb2828;
+    background-color: #ffffff;
     z-index: 10000;
     position: fixed;
     top: 0;
     left: 0;
-    transition: -webkit-transform .3s linear;
-    transition: transform .3s linear;
-    transition: transform .3s linear, -webkit-transform .3s linear;
+    transition: left .3s , -webkit-transform  .3s linear;
+    transition: transform  .3s linear , left .3s;
+    transition: transform  .3s linear , left .3s , -webkit-transform  .3s linear;
+}
+
+.header .inner-transform {
+    position: fixed !important;
+    top: 0 !important;
+    left: 200px;
+    transition: left .3s;
 }
 
 .header__border-burger {
@@ -13402,6 +13420,12 @@ template {
 
 /* 3-Pages*/
 
+.sidebar-active {
+    left: 0 !important;
+    transition: left .3s linear;
+    opacity: 1 !important;
+}
+
 .sidebar {
     width: 30%;
     padding: 40px;
@@ -13411,7 +13435,7 @@ template {
     flex-direction: column;
     color: #000000;
     min-height: 320px;
-    max-height: 100vh;
+    height: 100vh;
     overflow-y: auto !important;
     position: -webkit-sticky !important;
     position: sticky !important;
@@ -14146,7 +14170,7 @@ template {
     line-height: 1.5625;
     font-weight: 300;
     letter-spacing: 0.01em;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .body__inner {
@@ -14154,14 +14178,21 @@ template {
     display: flex;
 }
 
+.lock {
+    overflow: hidden !important;
+}
+
 .container-body {
     width: 100%;
     overflow-x: hidden;
-    border: 1px solid #000;
+    left: 0;
+    transition: left .3s;
 }
 
-.col {
-    padding: 0;
+.contant-active {
+    position: relative;
+    left: 200px;
+    transition: left .3s;
 }
 
 .img-logo,
@@ -14182,39 +14213,8 @@ template {
     object-fit: cover;
 }
 
-.manu-active {
-    -webkit-transform: translateX(0%) !important;
-    transform: translateX(0%) !important;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s;
-    opacity: 1 !important;
-}
-
-.contant-active {
-    -webkit-transform: translateX(200px) !important;
-    transform: translateX(200px) !important;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s;
-}
-
-.header-active {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    transition: -webkit-transform .3s linear;
-    transition: transform .3s linear;
-    transition: transform .3s linear, -webkit-transform .3s linear;
-}
-
 .main {
     padding: 0 15px;
-}
-
-.head_fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .title,
@@ -16485,11 +16485,8 @@ template {
     .sidebar {
         position: fixed !important;
         width: 200px;
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-        transition: -webkit-transform .3s;
-        transition: transform .3s;
-        transition: transform .3s, -webkit-transform .3s;
+        left: -200px;
+        transition: left .3s;
         padding: 20px;
     }
 
@@ -16538,12 +16535,6 @@ template {
 
     .product__title {
         margin-bottom: 20px;
-    }
-
-    .container-body {
-        transition: -webkit-transform .3s;
-        transition: transform .3s;
-        transition: transform .3s, -webkit-transform .3s;
     }
 
     .container {

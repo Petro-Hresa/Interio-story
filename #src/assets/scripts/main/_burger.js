@@ -3,11 +3,13 @@ let querSell = x => document.querySelector(x);
 (function(){
 
 	querSell('.header__border-burger').addEventListener('click', function(){
-          querSell('.sidebar').classList.toggle('manu-active');
+          querSell('.sidebar').classList.toggle('sidebar-active');
           querSell('.container-body').classList.toggle('contant-active');
-
-        if(querSell('.sidebar').classList.contains('manu-active')){
-        //   querSell('.header__inner').classList.add('contant-active');
+          querSell('.body').classList.toggle('lock');
+        if(querSell('.sidebar').classList.contains('sidebar-active')){
+          querSell('.header__inner').classList.add('inner-transform');
+        }else{
+            querSell('.header__inner').classList.remove('inner-transform');
         }
        
      
