@@ -3,15 +3,14 @@
 <head>
     {{> head }}
 </head>
-<body>
+<body class="body">
+        
+    <div class="body__inner">
 
-    {{> header }}
-
-    {{> body }}
-
-    {{> footer }}
-    <!-- <script src="../../../node_modules/jquery/dist/jquery.min.js"></script> -->
-    <!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script> -->
-    <script type="module" src="assets/scripts/script.min.js"></script>
+        {{> body }}
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/script.min.js"></script>
 </body>
 </html>
