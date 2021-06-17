@@ -1,11 +1,24 @@
 /* Text */
-// $fontFamily-1:
-$colorText:red;
+$fontFamily-1: "Roboto-Light";
+$fontFamily-2: "Roboto-Regular";
+
+
+$colorText-1:#6FC6A9;
+$colorText-2:#000000;
+$colorText-3: #ffffff;
+$colorText-4: rgba(255, 255, 255, 0.4);
+
+
 
 
 /* Buttons */
-$colorBtn:red;
-// $BackgroundBtn:
+// $colorBtn:red;
+$Background-1:#6FC6A9;
+$Background-2:#262626;
+$Background-3:rgba(0, 0, 0, 0.15);
+$Background-4:#ffffff;
+$Background-5: #f9f9f9;
+
 
 
 /* Breakpoints */

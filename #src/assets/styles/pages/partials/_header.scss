@@ -1,7 +1,114 @@
-header.header{
-    width: 100%;
-    height: 300px;
-    background-color:black;
-    font-size: 120px;
-    color: #fff;
+.header{
+
+        @media screen and (min-width:$lg){
+            display: none;
+        }
+        
+        @media screen and (max-width:$lg){
+            padding: 20px 0;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:$md){
+            padding: 15px 0;
+        }
+        
+
+        &__border-burger{
+            z-index: 101;
+            display: inline-block;
+
+            @media screen and (max-width:$lg){
+                border-radius: 50%;
+                background-color: #444444;
+                padding: 5px 2px;
+            }
+        }
+
+
+        /* .header__burger */
+        &__burger {
+            @media screen and (max-width:$lg){
+                z-index: 3;
+                padding: 8px 0px;
+                display: block;
+            }
+        }
+
+
+        /* header__borger_active */
+        &__borger_active {
+            @media screen and (max-width:$lg){
+
+                .header__line-burger{
+                    transform:rotate(-45deg)
+                }
+
+                &:before {
+                    opacity:0;
+                    top: 0;
+                    transform:rotate(45deg)
+                }
+
+                &:after {
+                    bottom: 0;	
+                    transform:rotate(-90deg)
+                }
+            }
+        }
+
+
+        /* .header__line-burger */
+        &__line-burger {
+            @media screen and (max-width:$lg){
+                background-color: #fff;
+                display: none;
+                width: 25px;
+                height: 2px;
+                margin: 7px;
+                position: relative;
+                z-index: 3;
+                display: flex;  
+                order: 3;
+
+                &:before,
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    border-radius: 20px;
+                    background-color:#fff;
+                }
+
+                &:before {
+                    top: -8px;
+                }
+
+                &:after {
+                    bottom: -8px;
+                }
+            }
+        }
+
+
+        &__wrap-logo{
+            width: 120px;
+            height: auto;
+            max-height: 150px;
+        }
+
+
+        &__logo{
+            @extend .img-logo;
+        }
+
 }
+
+
+
+

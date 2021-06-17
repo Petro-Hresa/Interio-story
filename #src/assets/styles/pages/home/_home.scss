@@ -1,5 +1,180 @@
-body{
-	background-color: gold;
-	// display: flex;
+@import "../partials/_sidebar";
+@import "./_components/last-projects";
+@import "./_components/_choose";
+@import "./_components/_attainment";
+@import "./_components/_ours";
+@import "./_components/_partners";
+@import "./_components/_product";
+
+
+
+
+.body{
+	min-width: 320px;
+	background-color: #fff;
+	font-family: $fontFamily-1;
+	font-size: 16px;
+    line-height: 1.5625;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+
+	&__inner{
+		// overflow-x: hidden;
+		display: flex;
+		height: 100vh;
+	}
+}
+
+.container-body{
+	width: 100%;
+
+
+	@media screen and (max-width:$lg){
+		transition:transform .3s;
+	}
+}
+
+.container{
+	
+	@media screen and(max-width:$lg){
+		max-width: 960px;
+	}
+}
+
+.col{
+	padding: 0;
+}
+
+.img-logo {
+  width: 100%;
+  height: 100%;
+  font-family: $fontFamily-1;
+}
+
+.images{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.manu-active{
+	transform: translateX(0%) !important;
+	transition:transform .5s;
+	opacity: 1 !important; 
+}
+
+.contant-active{
+	transform: translateX(200px) !important;
+	transition:transform .5s;
+	
+}
+
+.main{
+	min-height: 100%;
+	padding: 0 15px;
+}
+
+.cursor{
+	@media screen and (min-width: $lg) {
+		cursor:pointer;
+	}
+}
+
+.head_fixed{
+	position: fixed ;
+	top: 0;
+	left: 0;
+}
+
+.title{
+	font-size: 45px;
+	line-height: normal;
+	font-weight: 300;
+	// line-height: 1.4;
+
+	@media screen and(max-width:1620px) {
+		font-size: 35px;
+	}
+	
+	@media screen and(max-width:$xl) {
+		font-size: 24px;
+		line-height: 1.13333;
+	}
+}
+
+
+.box-padding{
+	padding: 135px 0;
+
+	@media screen and(max-width:$lg) {
+		padding: 60px 0;
+	}
+
+    @media screen and(max-width:$xl){
+       padding: 85px 0;
+    }
+
+    @media screen and(max-width:1620px) {
+		padding: 100px 0;
+	}
+}
+
+
+.line-before{
+
+	&:before {
+		content: "";
+		position: relative;
+		top: 1.7em;
+		left: 0;
+		display: inline-block;
+		width: 20px;
+		margin-right: 10px;
+		flex-shrink: 0;
+		border-top: 1px solid;
+		color: inherit;
+
+		@media screen and(min-width:$xl){
+			top: 1.6em;
+			width: 71px;
+			margin-right: 33px;
+		}
+
+	
+	}
+
+}
+
+
+.button{
+
+	position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 16px 30px;
+    font-size: 15px;
+    line-height: 1.25;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    transition: 250ms all ease-in-out;
+    border: none;
+
+	@media screen and (min-width: $lg) {
+		&:hover{
+			background-color: $Background-3;
+			transition: background-color .3s ease-in-out;
+		}
+	}
+
+
+	
 }
 
