@@ -13547,7 +13547,6 @@ template {
 
 .last-projects__wrapper {
     position: relative;
-    min-height: 100vh;
 }
 
 .last-projects__link {
@@ -16642,6 +16641,10 @@ template {
 
 @media screen and (max-width: 606px) {
     .last-projects .project-2 {
+        transition: left .4s .4s, opacity .8s .5s;
+    }
+
+    .last-projects .project-3 {
         transition: left .4s .5s, opacity .8s .5s;
     }
 }

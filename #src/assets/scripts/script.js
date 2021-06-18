@@ -75,6 +75,6 @@ $(document).ready(function(){
     // }, 1);
 });
 
-// window.onload = function(){
-//     document.body.scrollTop = 0;
-// }
+window.onload = function(){
+    document.body.scrollTop = 0;
+}

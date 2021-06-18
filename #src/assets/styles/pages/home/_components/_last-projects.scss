@@ -13,7 +13,7 @@
 	/* .last-projects__wrapper */
 	&__wrapper {
 		position: relative;
-		min-height: 100vh;
+		// min-height: 100%;
 
 		
 	}
@@ -41,7 +41,7 @@
 	.project-2{
 		transition: left .4s .4s, opacity .8s .4s;
 		@media screen and(max-width:606px) {
-			transition: left .4s .5s, opacity .8s .5s;
+			transition: left .4s .4s, opacity .8s .5s;
 
 			
 		}
@@ -51,6 +51,12 @@
 		transition: left .4s .3s, opacity .8s .3s ;
 		@media screen and(min-width:1878px) {
 			transition: left .4s .6s, opacity .8s .6s;
+
+			
+		}
+
+		@media screen and(max-width:606px) {
+			transition: left .4s .5s, opacity .8s .5s;
 
 			
 		}
