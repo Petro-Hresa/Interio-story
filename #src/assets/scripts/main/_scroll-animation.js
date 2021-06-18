@@ -1,3 +1,4 @@
+
 const animItems = document.querySelectorAll('.scroll-animation');
 
 if(animItems.length > 0){
@@ -27,6 +28,12 @@ if(animItems.length > 0){
 
                 animItem.classList.add("animation-active");
 
+            
+
+
+
+             
+
             }else{
 
                 if(!animItem.classList.contains("animate-none"))animItem.classList.remove("animation-active");
@@ -46,4 +53,5 @@ if(animItems.length > 0){
         return {top: rect.top + scrollTop , left: rect.Left + scrollLeft};
     }
 }
+
 

@@ -13559,24 +13559,24 @@ template {
 
 .last-projects .animation-active {
     left: 0;
-    transition: left .4s .4s, opacity .4s .4s;
+    transition: left .8s .4s, opacity .8s .4s;
     opacity: 1;
 }
 
 .last-projects .project-1 {
-    transition: left .4s .3s, opacity .8s .3s;
+    transition: left .8s .3s, opacity .8s .3s;
 }
 
 .last-projects .project-2 {
-    transition: left .4s .4s, opacity .8s .4s;
+    transition: left .8s .4s, opacity .8s .4s;
 }
 
 .last-projects .project-3 {
-    transition: left .4s .3s, opacity .8s .3s;
+    transition: left .8s .3s, opacity .8s .3s;
 }
 
 .last-projects .project-4 {
-    transition: left .4s .4s, opacity .4s .4s;
+    transition: left .8s .4s, opacity .8s .4s;
 }
 
 .card {
@@ -16214,11 +16214,11 @@ template {
 
 @media screen and (min-width: 1878px) {
     .last-projects .project-3 {
-        transition: left .4s .6s, opacity .8s .6s;
+        transition: left .8s .6s, opacity .8s .6s;
     }
 
     .last-projects .project-5 {
-        transition: left .4s .5s, opacity .8s .4s;
+        transition: left .8s .5s, opacity .8s .4s;
     }
 }
 
@@ -16641,11 +16641,11 @@ template {
 
 @media screen and (max-width: 606px) {
     .last-projects .project-2 {
-        transition: left .4s .4s, opacity .8s .5s;
+        transition: left .8s .4s, opacity .8s .5s;
     }
 
     .last-projects .project-3 {
-        transition: left .4s .5s, opacity .8s .5s;
+        transition: left .8s .5s, opacity .8s .5s;
     }
 }
 

@@ -178,6 +178,7 @@ function debounce( func ,  time = 10 ){
 
 
 ;
+
 const animItems = document.querySelectorAll('.scroll-animation');
 
 if(animItems.length > 0){
@@ -207,6 +208,12 @@ if(animItems.length > 0){
 
                 animItem.classList.add("animation-active");
 
+            
+
+
+
+             
+
             }else{
 
                 if(!animItem.classList.contains("animate-none"))animItem.classList.remove("animation-active");
@@ -226,6 +233,7 @@ if(animItems.length > 0){
         return {top: rect.top + scrollTop , left: rect.Left + scrollLeft};
     }
 }
+
 
 ;
 
@@ -292,12 +300,27 @@ function resizePage(){
 
 $(document).ready(function(){
 
+    $('.counter__number').counterUp({
+
+        delay: 10,
+        time: 1200
+    })
+
     $(".partners-carosel.owl-carousel").owlCarousel({
             items: 1,
         }
        
     );
 
+
+     
+    
+    $(window).scroll(function(){
+       
+    
+    })
+
+   
     // setTimeout(function(){
     //     window.scrollTo(0, 0);
     // }, 1);

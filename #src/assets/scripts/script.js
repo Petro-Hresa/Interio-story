@@ -64,12 +64,27 @@ function resizePage(){
 
 $(document).ready(function(){
 
+    $('.counter__number').counterUp({
+
+        delay: 10,
+        time: 1200
+    })
+
     $(".partners-carosel.owl-carousel").owlCarousel({
             items: 1,
         }
        
     );
 
+
+     
+    
+    $(window).scroll(function(){
+       
+    
+    })
+
+   
     // setTimeout(function(){
     //     window.scrollTo(0, 0);
     // }, 1);
