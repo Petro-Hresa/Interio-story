@@ -2,7 +2,6 @@
 	min-width: 100%;
 	margin-right: 20px;
 	padding: 40px 0px;
-	// height: 100vh;
 
 	
 	@media screen and(max-width:$lg) {
@@ -14,7 +13,6 @@
 	/* .last-projects__wrapper */
 	&__wrapper {
 		position: relative;
-		// border: 1px solid #000;
 		min-height: 100vh;
 
 		
@@ -28,28 +26,50 @@
 		left: 100%;
 		display: block;
 		opacity: 0;
-		
-		
-		
-		// border: 1px solid #000;
-        // opacity: 0;
-	
 
 	}
 
-	
+	.animation-active{
+		left: 0;
+		transition: left .4s .4s, opacity .4s .4s ;
+		opacity: 1;
+	}
+	.project-1{
+		transition: left .4s .3s, opacity .8s .3s ;
+	}
+
+	.project-2{
+		transition: left .4s .4s, opacity .8s .4s;
+		@media screen and(max-width:606px) {
+			transition: left .4s .5s, opacity .8s .5s;
+
+			
+		}
+	}
+
+	.project-3{
+		transition: left .4s .3s, opacity .8s .3s ;
+		@media screen and(min-width:1878px) {
+			transition: left .4s .6s, opacity .8s .6s;
+
+			
+		}
+	}
+
+	.project-4{
+		transition: left .4s .4s, opacity .4s .4s;
+	}
+
+
+	.project-5{
+		
+		@media screen and(min-width:1878px) {
+			transition: left .4s .5s, opacity .8s .4s;
+		}
+	}
 
 }
 
- .animation-active{
-	left: 0;
-	transition: left .4s .4s, opacity .8s .4s ;
-	opacity: 1;
-}
-
-.item-2-diley{
-	transition: left .4s .8s, opacity .8s .8;
-}
 
 
 

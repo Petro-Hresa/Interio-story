@@ -63,10 +63,18 @@ function resizePage(){
 
 
 $(document).ready(function(){
+
     $(".partners-carosel.owl-carousel").owlCarousel({
-        items: 1,
-    }
+            items: 1,
+        }
        
     );
+
+    // setTimeout(function(){
+    //     window.scrollTo(0, 0);
+    // }, 1);
 });
 
+// window.onload = function(){
+//     document.body.scrollTop = 0;
+// }

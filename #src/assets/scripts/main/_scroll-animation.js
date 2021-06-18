@@ -3,7 +3,7 @@ const animItems = document.querySelectorAll('.scroll-animation');
 if(animItems.length > 0){
    
     window.addEventListener('scroll' , animationForScroll )
-    window.addEventListener('reload', animationForScroll )
+    // window.addEventListener('reload', animationForScroll )
     animationForScroll();
     function animationForScroll(){
        
@@ -46,3 +46,4 @@ if(animItems.length > 0){
         return {top: rect.top + scrollTop , left: rect.Left + scrollLeft};
     }
 }
+
