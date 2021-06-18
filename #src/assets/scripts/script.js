@@ -1,6 +1,8 @@
 /*_Function  support browser webp css_*/
 @@include('main/_burger.js');
 @@include('main/_last-works.js');
+@@include('main/_scroll-animation.js');
+
 @@include('vendors/owl.carousel.min.js');
 
 
@@ -46,11 +48,12 @@ function resizePage(){
         querSell('.container-body').classList.remove('contant-active');
     } 
 
-    if(window.innerWidth <= 992 ){
+    if(window.innerWidth < 992 ){
+      
         console.log(headerInnerHeight)
         querSell('.header').style.height = `${headerInnerHeight}px`;
     }else if(window.innerWidth > 992){
-        querSell('.header').style.height = `0px`; 
+        querSell('.header').style.height = `0`; 
     }
 
 }

@@ -35,19 +35,19 @@
 .container-body{
 	width: 100%;
 	overflow-x: hidden;
-    left: 0;
-	transition: left .3s;
+	left: 0;
 	@media screen and (max-width:$lg){
-		
+		position: relative;
+		transition: .3s;
 	
 	}
 }
 
 
 .contant-active{
-	position: relative;
+	
 	left: 200px;
-	transition: left .3s ;
+	transition: left .3s;
 }
 
 
@@ -183,3 +183,9 @@
 	
 }
 
+
+.animation-show{
+	transform: translate(0 , 120%);
+	opacity: 0;
+	transition: all .8 ease 0s;
+}

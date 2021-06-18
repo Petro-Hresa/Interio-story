@@ -18,7 +18,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            transition: transform  .3s linear , left .3s;
+            transition: transform  .3s, left .3s;
 
         
             @media screen and (min-width:$lg){

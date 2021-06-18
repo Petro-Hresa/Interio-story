@@ -6,6 +6,7 @@ let querSell = x => document.querySelector(x);
           querSell('.sidebar').classList.toggle('sidebar-active');
           querSell('.container-body').classList.toggle('contant-active');
           querSell('.body').classList.toggle('lock');
+
         if(querSell('.sidebar').classList.contains('sidebar-active')){
           querSell('.header__inner').classList.add('inner-transform');
         }else{

@@ -13395,9 +13395,9 @@ template {
     position: fixed;
     top: 0;
     left: 0;
-    transition: left .3s , -webkit-transform  .3s linear;
-    transition: transform  .3s linear , left .3s;
-    transition: transform  .3s linear , left .3s , -webkit-transform  .3s linear;
+    transition: left .3s, -webkit-transform  .3s;
+    transition: transform  .3s, left .3s;
+    transition: transform  .3s, left .3s, -webkit-transform  .3s;
 }
 
 .header .inner-transform {
@@ -13547,17 +13547,25 @@ template {
 
 .last-projects__wrapper {
     position: relative;
+    min-height: 100vh;
 }
 
 .last-projects__link {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     display: block;
-    will-change: transform;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    opacity: 0;
+}
+
+.animation-active {
+    left: 0;
+    transition: left .4s .4s, opacity .8s .4s;
+    opacity: 1;
+}
+
+.item-2-diley {
+    transition: left .4s .8s, opacity .8s .8;
 }
 
 .card {
@@ -14186,11 +14194,9 @@ template {
     width: 100%;
     overflow-x: hidden;
     left: 0;
-    transition: left .3s;
 }
 
 .contant-active {
-    position: relative;
     left: 200px;
     transition: left .3s;
 }
@@ -14274,6 +14280,13 @@ template {
     user-select: none;
     transition: 250ms all ease-in-out;
     border: none;
+}
+
+.animation-show {
+    -webkit-transform: translate(0, 120%);
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all .8 ease 0s;
 }
 
 /* 4-Bootstrap */
@@ -16535,6 +16548,11 @@ template {
 
     .product__title {
         margin-bottom: 20px;
+    }
+
+    .container-body {
+        position: relative;
+        transition: .3s;
     }
 
     .container {

@@ -2,19 +2,22 @@
 	min-width: 100%;
 	margin-right: 20px;
 	padding: 40px 0px;
+	// height: 100vh;
 
 	
-
 	@media screen and(max-width:$lg) {
 	  padding-top: 10px;
 		
 	}
 
 
-
 	/* .last-projects__wrapper */
 	&__wrapper {
 		position: relative;
+		// border: 1px solid #000;
+		min-height: 100vh;
+
+		
 	}
 
 
@@ -22,11 +25,30 @@
 	&__link {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 100%;
 		display: block;
-		will-change: transform;
-		transition: transform .2s;
+		opacity: 0;
+		
+		
+		
+		// border: 1px solid #000;
+        // opacity: 0;
+	
+
 	}
+
+	
+
+}
+
+ .animation-active{
+	left: 0;
+	transition: left .4s .4s, opacity .8s .4s ;
+	opacity: 1;
+}
+
+.item-2-diley{
+	transition: left .4s .8s, opacity .8s .8;
 }
 
 
