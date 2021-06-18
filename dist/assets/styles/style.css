@@ -16422,6 +16422,10 @@ template {
 }
 
 @media screen and (max-width: 992px) {
+    .header {
+        min-height: 104px;
+    }
+
     .header__inner {
         padding: 20px 15px;
         display: -ms-flexbox;
