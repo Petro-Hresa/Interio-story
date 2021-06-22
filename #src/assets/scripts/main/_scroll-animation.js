@@ -3,6 +3,8 @@ const animItems = document.querySelectorAll('.scroll-animation');
 const counterNumbers = document.querySelectorAll('.counter__number');
 const speed = 200;
 
+let flag = false;
+
 
 setTimeout(function(){
 
@@ -57,10 +59,16 @@ if(animItems.length > 0){
 
                 animItem.classList.add("animation-active");
 
-                if(animItem.classList.contains("counter__number") && animItem.classList.contains("animation-active") ){
-
+                if(animItem.classList.contains("counter__number") && animItem.classList.contains("animation-active") && flag == false ){
+                    // console.log(animItem)
+                    // counterStart()  
+                    flag = true
                 
                 }
+
+                // if(number.classList.contains("animation-active")){
+                   
+                // }
 
              
 
@@ -94,30 +102,60 @@ if(animItems.length > 0){
 
 
 
- function counterStart(){
-counterNumbers.forEach(number => { 
 
+
+//  function counterStart(){
+    // counterNumbers.forEach(number => { 
+    //     console.log(number)
+    
+    //     const updateCount = () =>{
+    //         // console.log(number)
+    //         const numberTarget = +number.getAttribute('data-target');
+    //         const numberInnerText = +number.innerText;
            
+    //         const increment =  Math.round(numberTarget / speed);
+               
+    //         if(numberInnerText < numberTarget ){
+    //             //   console.log(increment)
+    //             number.innerText = numberInnerText + increment;
+    //             setTimeout(updateCount, 1)
 
-    const updateCount = () =>{
-        const numberTarget = +number.getAttribute('data-target');
-        const numberInnerText = +number.innerText;
+    //         }else number.innerText = numberTarget;
+    //     }
 
-        const increment =  Math.round(numberTarget / speed);
+       
 
-        if(numberInnerText < numberTarget ){
-            number.innerText = numberInnerText + increment;
-            setTimeout(updateCount, 1)
-
-        }else number.innerText = numberTarget;
-    }
-
-    updateCount()
-
-    })
+    //     })
+        // updateCount(); 
+    // }              
         
-}              
+    // counterStart() 
+    
         
-            
+
+    		// jQuery Count To
+		// if ( plugins.counter.length ) {
+		// 	for ( var i = 0; i < plugins.counter.length; i++ ) {
+		// 		var
+		// 			counter = $(plugins.counter[i]),
+		// 			initCount = function () {
+		// 				var counter = $(this);
+		// 				if ( !counter.hasClass( "animated-first" ) && isScrolledIntoView( counter ) ) {
+		// 					counter.countTo({
+		// 						refreshInterval: 40,
+		// 						speed: counter.attr("data-speed") || 1000,
+		// 						from: 0,
+		// 						to: parseInt( counter.text(), 10 )
+		// 					});
+		// 					counter.addClass('animated-first');
+		// 				}
+		// 			};
+
+		// 		$.proxy( initCount, counter )();
+		// 		$window.on( "scroll", $.proxy( initCount, counter ) );
+		// 	}
+		// }
+
+	// });
         
        

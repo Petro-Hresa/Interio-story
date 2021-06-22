@@ -5,13 +5,24 @@
 	}
 	/* .ours__row */
 	&__row {
+
 	}
 	/* .ours__item */
 	&__item {
-        // margin-left: -16px;
-        margin-bottom: 40px;
 
+        margin-bottom: 40px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform $animationDiley .4s, opacity $animationDiley .4s ;
 	}
+
+    .ours__item.animation-active,
+    .animation-active  .ours__item{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+      
 	/* .ours__box */
 	&__box {
         display: flex;

@@ -49,7 +49,7 @@
 
 	}
 
-	.animation-active  {
+	.last-projects__link.animation-active{
 		transform: translateX(0%);
 		transition: transform $animationDiley .4s, opacity $animationDiley .4s ;
 		opacity: 1;

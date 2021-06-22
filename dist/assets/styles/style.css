@@ -13554,7 +13554,7 @@ template {
     opacity: 0;
 }
 
-.last-projects .animation-active {
+.last-projects .last-projects__link.animation-active {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     transition: opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
@@ -13828,6 +13828,19 @@ template {
 
 .ours__item {
     margin-bottom: 40px;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0;
+    transition: opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
+    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s;
+    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
+}
+
+.ours .ours__item.animation-active,
+.ours .animation-active .ours__item {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 .ours__box {
