@@ -13,7 +13,7 @@
         margin-bottom: 40px;
         transform: translateY(50%);
         opacity: 0;
-        transition: transform $animationDiley .4s, opacity $animationDiley .4s ;
+        transition: transform  $animationDuration $animationDiley, opacity  $animationDuration $animationDiley;
 	}
 
     .ours__item.animation-active,

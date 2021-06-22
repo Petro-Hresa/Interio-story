@@ -33,9 +33,9 @@
 
 		display: block;
 		box-shadow: 0 0 5px #ccc;
-
 		transition:box-shadow .2s;
 		transform: translateX(220%);
+		opacity: 0;
 
 		@media screen and (min-width:$lg) {
 			&:hover{
@@ -43,71 +43,60 @@
 			}
 		}
 
-
-		opacity: 0;
-		// border: 1px solid #000;
-
 	}
 
 	.last-projects__link.animation-active{
 		transform: translateX(0%);
-		transition: transform $animationDiley .4s, opacity $animationDiley .4s ;
+		transition: transform $animationDuration .4s, opacity $animationDuration .4s ;
 		opacity: 1;
 	}
+
 	.project-1{
-		transition: transform $animationDiley .3s, opacity $animationDiley .3s ;
+		transition: transform $animationDuration .3s, opacity $animationDuration .3s ;
 	}
 
 	.project-2{
-		transition: transform $animationDiley .4s, opacity $animationDiley .4s;
+		transition: transform $animationDuration .4s, opacity $animationDuration .4s;
 		@media screen and(max-width:606px) {
-			transition: transform $animationDiley .4s, opacity $animationDiley .5s;
+			transition: transform $animationDuration .4s, opacity $animationDuration .5s;
 
 			
 		}
 	}
 
 	.project-3{
-		transition: transform $animationDiley .3s, opacity $animationDiley .3s ;
+		transition: transform $animationDuration .3s, opacity $animationDuration .3s ;
 		@media screen and(min-width:1878px) {
-			transition: transform $animationDiley .6s, opacity $animationDiley .6s;
+			transition: transform $animationDuration .6s, opacity $animationDuration .6s;
 
 			
 		}
 
 		@media screen and(max-width:606px) {
-			transition: transform $animationDiley .5s, opacity $animationDiley .5s;
+			transition: transform $animationDuration .5s, opacity $animationDuration .5s;
 
 			
 		}
 	}
 
 	.project-4{
-		transition: transform $animationDiley .4s, opacity $animationDiley .4s;
+		transition: transform $animationDuration .4s, opacity $animationDuration .4s;
 	}
 
 
 	.project-5{
-		transition: transform $animationDiley .2s, opacity $animationDiley .2s;
+		transition: transform $animationDuration .2s, opacity $animationDuration .2s;
 		@media screen and(min-width:1878px) {
-			transition: transform $animationDiley .5s, opacity $animationDiley .4s;
+			transition: transform $animationDuration .5s, opacity $animationDuration .4s;
 		}
 	}
 
 }
 
 
-
-
 .card {
 
-    // display: flex;
-	// justify-content: space-between;
-	// flex-direction: column;
 	display: block;
-
-
-	
 
 	/* .card__wrap-img */
 	&__wrap-img {
@@ -116,20 +105,12 @@
 		background-size:cover;
 		padding-bottom: 75%;
 		background-position: center;
-		// border: 1px solid #000;
-		// flex: 1 1 auto;
 	}
-
-
-	// &__img{
-	// 	@extend .images;
-	// }
 
 
 	/* .card__caption */
 	&__caption {
 		padding: 20px;
-		// border: 1px solid #000;
 	}
 
 
