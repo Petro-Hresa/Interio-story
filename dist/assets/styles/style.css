@@ -13557,9 +13557,6 @@ template {
 .last-projects .last-projects__link.animation-active {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
-    transition: opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
-    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s;
-    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
     opacity: 1;
 }
 
@@ -13588,9 +13585,9 @@ template {
 }
 
 .last-projects .project-5 {
-    transition: opacity 0.8s 0.2s, -webkit-transform 0.8s 0.2s;
-    transition: transform 0.8s 0.2s, opacity 0.8s 0.2s;
-    transition: transform 0.8s 0.2s, opacity 0.8s 0.2s, -webkit-transform 0.8s 0.2s;
+    transition: opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
+    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s;
+    transition: transform 0.8s 0.4s, opacity 0.8s 0.4s, -webkit-transform 0.8s 0.4s;
 }
 
 .card {
@@ -14348,11 +14345,44 @@ template {
     border: none;
 }
 
-.animation-show {
-    -webkit-transform: translate(0, 120%);
-    transform: translate(0, 120%);
+#button {
+    display: inline-block;
+    background-color: #6FC6A9;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,  opacity .5s, visibility .5s;
     opacity: 0;
-    transition: all .8 ease 0s;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 47px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* 4-Bootstrap */
@@ -16636,7 +16666,7 @@ template {
     }
 
     .header__line-burger {
-        background-color: #fff;
+        background-color: #ffffff;
         display: none;
         width: 25px;
         height: 2px;
@@ -16657,7 +16687,7 @@ template {
         position: absolute;
         left: 0;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: #ffffff;
     }
 
     .header__line-burger:before {

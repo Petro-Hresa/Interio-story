@@ -2,7 +2,6 @@
 	min-width: 100%;
 	margin-right: 20px;
 	padding: 40px 0px;
-
 	display: grid;
 	
 
@@ -47,7 +46,6 @@
 
 	.last-projects__link.animation-active{
 		transform: translateX(0%);
-		transition: transform $animationDuration .4s, opacity $animationDuration .4s ;
 		opacity: 1;
 	}
 
@@ -56,11 +54,9 @@
 	}
 
 	.project-2{
-		transition: transform $animationDuration .4s, opacity $animationDuration .4s;
+		transition: transform $animationDuration .4s, opacity $animationDuration .4s ;
 		@media screen and(max-width:606px) {
 			transition: transform $animationDuration .4s, opacity $animationDuration .5s;
-
-			
 		}
 	}
 
@@ -68,14 +64,10 @@
 		transition: transform $animationDuration .3s, opacity $animationDuration .3s ;
 		@media screen and(min-width:1878px) {
 			transition: transform $animationDuration .6s, opacity $animationDuration .6s;
-
-			
 		}
 
 		@media screen and(max-width:606px) {
 			transition: transform $animationDuration .5s, opacity $animationDuration .5s;
-
-			
 		}
 	}
 
@@ -83,9 +75,8 @@
 		transition: transform $animationDuration .4s, opacity $animationDuration .4s;
 	}
 
-
 	.project-5{
-		transition: transform $animationDuration .2s, opacity $animationDuration .2s;
+		transition: transform $animationDuration .4s, opacity $animationDuration .4s;
 		@media screen and(min-width:1878px) {
 			transition: transform $animationDuration .5s, opacity $animationDuration .4s;
 		}

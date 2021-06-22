@@ -15,16 +15,19 @@
     }
 
 
-	/* .contacts__container */
-	&__container {
+    /* .contacts__container */
+    &__container {
         @media screen and (max-width: 1920px) {
-           padding: 0 30px;
+            padding: 0 30px;
         }
-	}
-	/* .contacts__row */
-	&__row {
+
+    }
+    
+
+    /* .contacts__row */
+    &__row {
         justify-content: space-between !important;
-	}
+    }
 }
 
 
@@ -36,16 +39,14 @@
 	&__title {
         @extend .attainment__title;
         margin-bottom: 30px;
+
         @media screen and (max-width: $xxl) {
             margin-bottom: 15px;
             font-size: 20px;
         }
-
-        
-
-      
-
 	}
+
+
 	/* .address__list */
 	&__list {
         @extend .choose__list-marked;
@@ -63,19 +64,21 @@
 	/* .contact__title */
 	&__title {
         @extend .address__title;
-        
-       
 	}
+
+
 	/* .contact__container */
 	&__container {
-      
         display: flex;
 	}
+
+
 	/* .contact__name */
 	&__name {
         color:$colorText-4;
         margin-right: 8px;
 	}
+
 	/* .contact__link */
 	&__link {
         color:inherit;
@@ -91,31 +94,34 @@
         @extend .address__title;
         text-align: left !important;
 	}
+
 	/* .subscribe__form */
 	&__form {
 
-                @media screen and (max-width: $xl) {
-                        display: flex;
-                        align-items: center;
-                     
-
-                }
-
-                @media screen and (max-width: $md) {
-                     flex-direction: column;
-                     align-items: flex-start;
-                    }
-
+        @media screen and (max-width: $xl) {
+            display: flex;
+            align-items: center;
         }
+
+        @media screen and (max-width: $md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    }
+
+    
 	/* .subscribe__form-wrap */
 	&__form-wrap {
         position: relative;
         @media screen and (max-width: $xl) {
-               min-width: 50%;
+            min-width: 50%;
 
         }
         
 	}
+
+    
 	/* .subscribe__icon */
 	&__icon {
         position: absolute;
@@ -189,8 +195,8 @@
 	/* .subscribe__button */
 	&__button {
         @extend .button;
-                color: $colorText-3;
-                background-color: $Background-1;
-                border-color: $Background-1;
+        color: $colorText-3;
+        background-color: $Background-1;
+        border-color: $Background-1;
 	}
 }
