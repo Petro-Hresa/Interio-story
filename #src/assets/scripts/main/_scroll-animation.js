@@ -1,20 +1,45 @@
 
 const animItems = document.querySelectorAll('.scroll-animation');
+const counterNumbers = document.querySelectorAll('.counter__number');
+const speed = 200;
 
+// last-project start function
+setTimeout(function(){
+
+    let projectsItem =  document.querySelectorAll('.grid-item');
+    let lastProjectsLink = document.querySelectorAll('.last-projects__link')
+    if(window.innerHeight > 1000 ){
+
+        lastProjectsLink.forEach(item =>{
+            item.classList.add("animation-active");
+        })
+    }
+
+    projectsItem.forEach(project =>{
+        project.classList.add("animation-active");
+    })
+    
+},60)
+
+
+// scroll animation
 if(animItems.length > 0){
    
     window.addEventListener('scroll' , animationForScroll )
-    // window.addEventListener('reload', animationForScroll )
+
     animationForScroll();
+
+
     function animationForScroll(){
        
         for (let i = 0; i < animItems.length; i++){
 
             const animItem = animItems[i];
             const animItemsHeight = animItem.offsetHeight;
+        
 
             const animItemsOffset = offset(animItem).top;
-            const animStart = 4;
+            const animStart = 1.2;
 
             let animItemPoint = window.innerHeight - animItemsHeight - animStart;
 
@@ -28,15 +53,12 @@ if(animItems.length > 0){
 
                 animItem.classList.add("animation-active");
 
-            
-
-
-
-             
-
             }else{
 
-                if(!animItem.classList.contains("animate-none"))animItem.classList.remove("animation-active");
+              
+                if(!animItem.classList.contains("animate-none")){
+                    animItem.classList.remove("animation-active");
+                }
                 
                 
             }
@@ -45,6 +67,7 @@ if(animItems.length > 0){
      
     }
 
+    // offset page 
     function offset(element){
         const rect = element.getBoundingClientRect();
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -55,3 +78,10 @@ if(animItems.length > 0){
 }
 
 
+
+
+
+
+
+
+       

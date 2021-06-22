@@ -99,7 +99,7 @@
         /* .header__line-burger */
         &__line-burger {
             @media screen and (max-width:$lg){
-                background-color: #fff;
+                background-color: $Background-4;
                 display: none;
                 width: 25px;
                 height: 2px;
@@ -117,7 +117,7 @@
                     position: absolute;
                     left: 0;
                     border-radius: 20px;
-                    background-color:#fff;
+                    background-color:$Background-4;
                 }
 
                 &:before {
