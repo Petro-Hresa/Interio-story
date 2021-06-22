@@ -1,38 +1,49 @@
 /*_Function  support browser webp css_*/
 @@include('main/_burger.js');
-@@include('main/_last-works.js');
+// @@include('main/_last-works.js');
 @@include('main/_scroll-animation.js');
 
 @@include('vendors/owl.carousel.min.js');
 
 
-const grid = document.querySelector('.grid');
+// const grid = document.querySelector('.grid');
 
-window.setTimeout(function(){
+// window.setTimeout(function(){
 
-    const msnry = new LastWorksGrid( grid, {
+//     const msnry = new LastWorksGrid( grid, {
 
-        responsive:{
-          0:{
-              columns: 1,
-              gap: 20
-          },
+//         responsive:{
+//           0:{
+//               columns: 1,
+//               gap: 20
+//           },
       
-          576:{
-              columns: 2,
-              gap: 20
-          },
+//           576:{
+//               columns: 2,
+//               gap: 20
+//           },
       
-          1400:{
-              columns: 3,
-              gap: 40
-          }
+//           1400:{
+//               columns: 3,
+//               gap: 40
+//           }
       
-        }
-      });
+//         }
+//       });
 
 
-}, 100)
+// }, 100)
+
+
+// let magicGrid = new MagicGrid({
+//     container: '.last-projects__wrapper',
+//     animate: true,
+//     gutter: 40,
+//     static: true,
+//     useMin: true
+//   });
+
+//   magicGrid.listen();
 
 
 
@@ -64,11 +75,11 @@ function resizePage(){
 
 $(document).ready(function(){
 
-    $('.counter__number').counterUp({
+    // $('.counter__number').counterUp({
 
-        delay: 10,
-        time: 1200
-    })
+    //     delay: 10,
+    //     time: 1200
+    // })
 
     $(".partners-carosel.owl-carousel").owlCarousel({
             items: 1,
@@ -79,10 +90,10 @@ $(document).ready(function(){
 
      
     
-    $(window).scroll(function(){
+    // $(window).scroll(function(){
        
     
-    })
+    // })
 
    
     // setTimeout(function(){
@@ -91,5 +102,10 @@ $(document).ready(function(){
 });
 
 window.onload = function(){
-    document.body.scrollTop = 0;
+    // document.body.scrollTop = 700;
 }
+
+
+
+
+

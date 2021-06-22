@@ -3,74 +3,94 @@
 	margin-right: 20px;
 	padding: 40px 0px;
 
+	display: grid;
 	
-	@media screen and(max-width:$lg) {
-	  padding-top: 10px;
-		
+
+	@media screen and(min-width: 1920px) {
+
+		grid-template-columns:repeat(3 , minmax(410px, 1fr));
+		grid-gap: 40px;
+    }
+
+
+	@media screen and(max-width: 1920px) {
+
+		grid-template-columns:repeat(auto-fit , minmax(410px, 1fr));
+		grid-gap: 20px;
+    }
+
+
+	@media screen and(max-width:$xl) {
+		grid-template-columns:repeat(auto-fit , minmax(310px, 1fr));
+	
+			
 	}
 
-
-	/* .last-projects__wrapper */
-	&__wrapper {
-		position: relative;
-		// min-height: 100%;
-
-		
-	}
 
 
 	/* .last-projects__link */
 	&__link {
-		position: absolute;
-		top: 0;
-		left: 100%;
+
 		display: block;
+		box-shadow: 0 0 5px #ccc;
+
+		transition:box-shadow .2s;
+		transform: translateX(220%);
+
+		@media screen and (min-width:$lg) {
+			&:hover{
+				box-shadow: 0 0 25px #ccc;
+			}
+		}
+
+
 		opacity: 0;
+		// border: 1px solid #000;
 
 	}
 
-	.animation-active{
-		left: 0;
-		transition: left .8s .4s, opacity .8s .4s ;
+	.animation-active  {
+		transform: translateX(0%);
+		transition: transform $animationDiley .4s, opacity $animationDiley .4s ;
 		opacity: 1;
 	}
 	.project-1{
-		transition: left .8s .3s, opacity .8s .3s ;
+		transition: transform $animationDiley .3s, opacity $animationDiley .3s ;
 	}
 
 	.project-2{
-		transition: left .8s .4s, opacity .8s .4s;
+		transition: transform $animationDiley .4s, opacity $animationDiley .4s;
 		@media screen and(max-width:606px) {
-			transition: left .8s .4s, opacity .8s .5s;
+			transition: transform $animationDiley .4s, opacity $animationDiley .5s;
 
 			
 		}
 	}
 
 	.project-3{
-		transition: left .8s .3s, opacity .8s .3s ;
+		transition: transform $animationDiley .3s, opacity $animationDiley .3s ;
 		@media screen and(min-width:1878px) {
-			transition: left .8s .6s, opacity .8s .6s;
+			transition: transform $animationDiley .6s, opacity $animationDiley .6s;
 
 			
 		}
 
 		@media screen and(max-width:606px) {
-			transition: left .8s .5s, opacity .8s .5s;
+			transition: transform $animationDiley .5s, opacity $animationDiley .5s;
 
 			
 		}
 	}
 
 	.project-4{
-		transition: left .8s .4s, opacity .8s .4s;
+		transition: transform $animationDiley .4s, opacity $animationDiley .4s;
 	}
 
 
 	.project-5{
 		
 		@media screen and(min-width:1878px) {
-			transition: left .8s .5s, opacity .8s .4s;
+			transition: transform $animationDiley .5s, opacity $animationDiley .4s;
 		}
 	}
 
@@ -80,31 +100,36 @@
 
 
 .card {
-	box-shadow: 0 0 5px #ccc;
-	display: block;
-	transition:box-shadow .2s;
 
-	@media screen and (min-width:$lg) {
-		&:hover{
-			box-shadow: 0 0 25px #ccc;
-		}
-	}
+    // display: flex;
+	// justify-content: space-between;
+	// flex-direction: column;
+	display: block;
+
+
 	
 
 	/* .card__wrap-img */
 	&__wrap-img {
 		width: 100%;
+		background-repeat: no-repeat;
+		background-size:cover;
+		padding-bottom: 75%;
+		background-position: center;
+		// border: 1px solid #000;
+		// flex: 1 1 auto;
 	}
 
 
-	&__img{
-		@extend .images;
-	}
+	// &__img{
+	// 	@extend .images;
+	// }
 
 
 	/* .card__caption */
 	&__caption {
 		padding: 20px;
+		// border: 1px solid #000;
 	}
 
 

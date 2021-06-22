@@ -1,5 +1,9 @@
 
 const animItems = document.querySelectorAll('.scroll-animation');
+const counterNumbers = document.querySelectorAll('.counter__number');
+const speed = 200;
+
+
 
 if(animItems.length > 0){
    
@@ -22,21 +26,30 @@ if(animItems.length > 0){
 
               animItemPoint = window.innerHeight - animItemsHeight - animStart;
 
+           
+
             }
 
             if((pageYOffset > animItemsOffset - animItemPoint ) && pageYOffset < (animItemsOffset + animItemsHeight ) ){
 
                 animItem.classList.add("animation-active");
 
-            
+                if(animItem.classList.contains("counter__number") && animItem.classList.contains("animation-active") ){
 
-
+                
+                }
 
              
 
             }else{
 
-                if(!animItem.classList.contains("animate-none"))animItem.classList.remove("animation-active");
+              
+                if(!animItem.classList.contains("animate-none")){
+
+       
+                   
+                    animItem.classList.remove("animation-active");
+                }
                 
                 
             }
@@ -55,3 +68,35 @@ if(animItems.length > 0){
 }
 
 
+
+
+
+ function counterStart(){
+counterNumbers.forEach(number => { 
+
+           
+
+    const updateCount = () =>{
+        const numberTarget = +number.getAttribute('data-target');
+        const numberInnerText = +number.innerText;
+
+        const increment =  Math.round(numberTarget / speed);
+
+        if(numberInnerText < numberTarget ){
+            number.innerText = numberInnerText + increment;
+            setTimeout(updateCount, 1)
+
+        }else number.innerText = numberTarget;
+    }
+
+    updateCount()
+
+       
+
+    })
+        
+}              
+        
+            
+        
+       
