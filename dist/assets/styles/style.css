@@ -16320,8 +16320,20 @@ template {
         grid-gap: 20px;
     }
 
+    .attainment {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+
     .contacts__container {
         padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    .attainment {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
     }
 }
 
@@ -16412,7 +16424,6 @@ template {
     .attainment__article {
         display: -ms-flexbox;
         display: flex;
-        margin: 0 3%;
     }
 
     .attainment__title-in-Interion {
@@ -16722,7 +16733,6 @@ template {
 
     .attainment__article {
         display: block;
-        margin: 0;
     }
 
     .attainment__title-in-Interion {

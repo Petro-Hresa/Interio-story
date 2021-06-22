@@ -1,6 +1,15 @@
 .attainment {
 	@extend .box-padding;
 	background-color: $Background-2;
+	@media screen and(max-width: 1920px){
+		padding-right: 3rem !important;
+		padding-left: 3rem !important;
+	}
+
+	@media screen and(max-width: 1640px){
+		padding-right: 2rem !important;
+		padding-left: 2rem !important;
+	}
 
 
 	&__container{
@@ -9,6 +18,8 @@
 		    min-width: 100%;
 
 		}
+
+	
 	}
 
 	&__row{
@@ -20,9 +31,6 @@
 	&__box {
         text-align: left;
 		margin-bottom: 40px;
-		
-
-		
 	}
 
 
@@ -89,14 +97,15 @@
 
 	&__article{
 
+	
 		@media screen and(max-width: $xxl){
 			display: flex;
-		    margin: 0 3%;
+		    // margin: 0 3%;
 	    }
 		
 		@media screen and(max-width: $md){
 		    display: block;
-			margin: 0;
+			// margin: 0;
 
 		}
 	}
