@@ -184,21 +184,44 @@ const counterNumbers = document.querySelectorAll('.counter__number');
 const speed = 200;
 
 
+setTimeout(function(){
+
+    let projectsItem =  document.querySelectorAll('.grid-item');
+    let lastProjectsLink = document.querySelectorAll('.last-projects__link')
+    if(window.innerHeight > 1000 ){
+
+        lastProjectsLink.forEach(item =>{
+            item.classList.add("animation-active");
+    
+        })
+    }
+
+    projectsItem.forEach(project =>{
+        project.classList.add("animation-active");
+
+    })
+    
+},60)
+
+
 
 if(animItems.length > 0){
    
     window.addEventListener('scroll' , animationForScroll )
-    // window.addEventListener('reload', animationForScroll )
+
     animationForScroll();
+
+
     function animationForScroll(){
        
         for (let i = 0; i < animItems.length; i++){
 
             const animItem = animItems[i];
             const animItemsHeight = animItem.offsetHeight;
+        
 
             const animItemsOffset = offset(animItem).top;
-            const animStart = 4;
+            const animStart = 1.2;
 
             let animItemPoint = window.innerHeight - animItemsHeight - animStart;
 

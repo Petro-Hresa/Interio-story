@@ -88,7 +88,7 @@
 
 
 	.project-5{
-		
+		transition: transform $animationDiley .2s, opacity $animationDiley .2s;
 		@media screen and(min-width:1878px) {
 			transition: transform $animationDiley .5s, opacity $animationDiley .4s;
 		}
