@@ -294,8 +294,6 @@ counterNumbers.forEach(number => {
 
     updateCount()
 
-       
-
     })
         
 }              
@@ -410,6 +408,18 @@ window.onload = function(){
 }
 
 
+let contactFormInput = document.querySelector('.subscribe__input');
+let contactFormLable = document.querySelector('.subscribe__label');
 
+contactFormInput.onfocus =  function(){
+    contactFormLable.style.opacity = "0";
+}
 
-
+contactFormInput.onblur =  function(){
+    if(contactFormInput.value == "") contactFormLable.style.opacity = "1";
+    else{
+        contactFormLable.style.opacity = "1"
+        contactFormInput.value = '';
+    } 
+   
+}

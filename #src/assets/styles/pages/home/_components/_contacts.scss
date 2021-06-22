@@ -2,6 +2,19 @@
     padding: 50px 0;
     background-color: $Background-2;
     color:$colorText-3;
+
+    @media screen and (max-width: $xl) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    @media screen and (max-width: $sm) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+
 	/* .contacts__container */
 	&__container {
         @media screen and (max-width: 1920px) {
@@ -28,6 +41,8 @@
             font-size: 20px;
         }
 
+        
+
       
 
 	}
@@ -35,6 +50,9 @@
 	&__list {
         @extend .choose__list-marked;
         color: $colorText-4; 
+        p{
+            margin: 0;
+        }
 	}
 }
 
@@ -75,10 +93,28 @@
 	}
 	/* .subscribe__form */
 	&__form {
-	}
+
+                @media screen and (max-width: $xl) {
+                        display: flex;
+                        align-items: center;
+                     
+
+                }
+
+                @media screen and (max-width: $md) {
+                     flex-direction: column;
+                     align-items: flex-start;
+                    }
+
+        }
 	/* .subscribe__form-wrap */
 	&__form-wrap {
         position: relative;
+        @media screen and (max-width: $xl) {
+               min-width: 50%;
+
+        }
+        
 	}
 	/* .subscribe__icon */
 	&__icon {
@@ -133,14 +169,28 @@
 	}
 	/* .subscribe__button-wrap */
 	&__button-wrap {
+
+        width: 100%;
         margin-top: 40px;
+     
+        @media screen and (max-width: $xl) {
+                // min-width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+         }
+
+         @media screen and (max-width: $md) {
+                justify-content: start;
+                align-items: center;
+               }
 
 	}
 	/* .subscribe__button */
 	&__button {
         @extend .button;
-		color: $colorText-3;
-		background-color: $Background-1;
-		border-color: $Background-1;
+                color: $colorText-3;
+                background-color: $Background-1;
+                border-color: $Background-1;
 	}
 }

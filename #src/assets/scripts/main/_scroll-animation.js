@@ -114,8 +114,6 @@ counterNumbers.forEach(number => {
 
     updateCount()
 
-       
-
     })
         
 }              
