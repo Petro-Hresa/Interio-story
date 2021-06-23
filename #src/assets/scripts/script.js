@@ -18,13 +18,24 @@ resizePage()
 
 function resizePage(){
 
-   if(window.innerWidth >= 992 && querSell('.sidebar').classList.contains('manu-active')){
-        querSell('.sidebar').classList.remove('manu-active');
-        querSell('.container-body').classList.remove('contant-active');
+   if(window.innerWidth >= 992 && querSell('.sidebar').classList.contains('sidebar-active')){
+    querSell('.sidebar').classList.remove('sidebar-active');
+       
+
+    querSell('.header__inner').classList.remove('inner-left');
+
+    querSell('.main').classList.remove('block-left');
+    querSell('.contacts').classList.remove('block-left');
+
+
+    querSell('#button').classList.remove('button-hidden');
+    querSell('.body').classList.remove('lock');
     } 
 
-    if(window.innerWidth < 992 ) querSell('.header').style.height = `${headerInnerHeight}px`;
-    else if(window.innerWidth > 992) querSell('.header').style.height = `0`; 
+    if(window.innerWidth < 992 ){
+        querSell('.header').style.height = `${headerInnerHeight}px`;
+
+    }else if(window.innerWidth > 992) querSell('.header').style.height = `0`; 
     
 
 }

@@ -1,30 +1,16 @@
 
-.header-active{
-	position:fixed !important;
-	top: 0;
-	left: 0;
-	transform:translateY(-150px);
-	transition: transform .3s linear;
-	
-}
+
 
 .header{
     width: 100%;
+    display: block;
     @media screen and (max-width:$lg){
         min-height: 104px;
     }
    
    
         &__inner{
-            width: 100%;
-            background-color:$Background-4;
-            z-index: 10000;
-            position: fixed;
-            top: 0;
-            left: 0;
-            transition: transform  .3s, left .3s;
-
-        
+         
             @media screen and (min-width:$lg){
                 display: none;
             }
@@ -34,6 +20,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                width: 100%;
+                background-color:$Background-4;
+                z-index: 10000;
+                position: fixed;
+                top: 0;
+                left: 0;
+                transition:  transform .3s linear ,  left .3s  !important;
+
             }
     
             @media screen and (max-width:$md){
@@ -44,10 +38,9 @@
 
         }
 
-        .inner-transform{
-            position: fixed !important;
-            top: 0 !important;
-            left: 200px;
+        .inner-left{
+            top: 0;
+            left: 200px !important;
             transition: left .3s;
         }
         
@@ -145,5 +138,9 @@
 }
 
 
-
+.header-active{
+    transform: translateY(-100%);
+	transition:  transform .3s linear !important;
+	
+}
 

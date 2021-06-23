@@ -5,12 +5,16 @@ let querSell = x => document.querySelector(x);
 
 	querSell('.header__border-burger').addEventListener('click', function(){
           querSell('.sidebar').classList.toggle('sidebar-active');
-          querSell('.container-body').classList.toggle('contant-active');
-          querSell('.body').classList.toggle('lock');
+       
 
-        if(querSell('.sidebar').classList.contains('sidebar-active'))querSell('.header__inner').classList.add('inner-transform');
-        else querSell('.header__inner').classList.remove('inner-transform');
-        
+        querSell('.header__inner').classList.toggle('inner-left');
+
+        querSell('.main').classList.toggle('block-left');
+        querSell('.contacts').classList.toggle('block-left');
+
+
+        querSell('#button').classList.toggle('button-hidden');
+        querSell('.body').classList.toggle('lock');
      
 	});
 

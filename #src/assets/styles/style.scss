@@ -9,12 +9,14 @@
 @import "fonts/ico-fonts";
 
 /* 2-Partials*/
-@import "pages/partials/header";
-@import "pages/partials/footer";
-
+@import "pages/partials/_header";
 
 /* 3-Pages*/
 @import "pages/home/_home";
+
+
+@import "pages/partials/_footer";
+
 
 
 /* 4-Bootstrap */
@@ -25,4 +27,4 @@
   @import 'vendors/owl.theme.default.min';
 
 // flexbin
-  @import 'vendors/flexbin';
+  // @import 'vendors/flexbin';

@@ -176,11 +176,15 @@
 		
 	}
 
-		@media screen and(max-width: $sm) {
-			flex-direction: column;
-			justify-content: center;
-			padding-left: 2rem;
-		}
+	@media screen and(max-width: $sm) {
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 2rem;
+	}
+
+	@media screen and(min-width: $md) and (max-width: $lg) {
+        padding-top: 20px;
+	}
 	
 	/* .product-counter__wrap */
 	&__wrap {
@@ -237,6 +241,8 @@
 		@extend .choose__list-marked;
 		margin-top: 45px;
 
+		
+
 		@media screen and(max-width:$xxl) {
             margin-top: 20px;
         }
@@ -244,6 +250,10 @@
 		li{
 			margin-bottom: 24px;
 			font-size: 16px;
+			&::before{
+			
+				top: 6px !important;
+			}
 			@media screen and(min-width:1620px) {
 				font-size: 20px;
 			}

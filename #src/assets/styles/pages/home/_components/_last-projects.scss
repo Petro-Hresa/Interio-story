@@ -14,13 +14,19 @@
 
 	@media screen and(max-width: 1920px) {
 
-		grid-template-columns:repeat(auto-fit , minmax(410px, 1fr));
+		grid-template-columns:repeat(auto-fit , minmax(390px, 1fr));
 		grid-gap: 20px;
     }
 
 
 	@media screen and(max-width:$xl) {
 		grid-template-columns:repeat(auto-fit , minmax(310px, 1fr));
+	
+			
+	}
+
+	@media screen and(max-width:370px) {
+		grid-template-columns:repeat(auto-fit , minmax(210px, 1fr));
 	
 			
 	}

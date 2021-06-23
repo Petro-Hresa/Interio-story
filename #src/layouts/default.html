@@ -4,11 +4,73 @@
     {{> head }}
 </head>
 <body class="body">
+
+    <!-- Sidebar -->
+    <section class="sidebar">
+        <div class="sidebar__inner">
+
+            <!--sidebar Logo -->
+            <div class="sidebar__wrap-logo">
+                <img src="assets/images/logo-green.webp"  alt="INTERIO STORY" class="sidebar__logo">
+            </div>
+
+
+            <!--sidebar nav  -->
+            <nav class="sidebar__manu">
+                <ul class="sidebar__list">
+                    <li><a href="#" class="sidebar__link">Домашня</a></li>
+                    <li><a href="#" class="sidebar__link">Про нас</a></li>
+                    <li><a href="#" class="sidebar__link">Контакти</a></li> 
+                    
+                </ul>
+
+            </nav>
+
+            
+            <div class="sidebar__phones phones">
+                <div class="phones__list">
+                    <div>Кухні</div>
+                    <div>
+                        <a class="phones__link" href="tel:0674218000">067-421-8000</a>
+                    </div>
+                </div>
+
+                <div class="phones__list">
+                    <div>Штори/Шпалери</div>
+                    <div>
+                        <a class="phones__link" href="tel:0679004000">067-900-4000</a>
+                    </div>
+                </div>
+
+                <div class="phones__list">
+                    <div>Меблі/Світло/Декор</div>
+                    <div>
+                        <a class="phones__link" href="tel:0688000888">068-800-0888</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--sidebar networks  -->
+            <div class="sidebar__networks networks">
+                <a class="networks__item networks__facebook mdi mdi-facebook" href="https://www.facebook.com/InterioStory/"></a>
+                <a class="networks__item networks__instagram mdi mdi-instagram" href="https://www.instagram.com/interio_story/"></a>
+                <a class="networks__item networks__youtube mdi mdi-youtube-play" href="https://www.youtube.com/channel/UCbmRvuK8zUDjufOz7n034yw"></a>
+            </div>
+
+        </div>
+    </section>
+
+
+
         
     <div class="body__inner">
         <a id="button"></a>
+        {{> header }}
 
         {{> body }}
+
+        {{> footer }}
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
