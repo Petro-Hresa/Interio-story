@@ -76,7 +76,8 @@
 		}
 
 		@media screen and(max-width:$lg) {
-			justify-content: flex-end !important;
+			flex-direction: row !important;
+			justify-content: center !important;
 		}
 
 	}
@@ -90,6 +91,12 @@
 
 		@media screen and(max-width:$lg) {
 			margin-bottom: 0;
+
+			
+		}
+
+		@media screen and(max-width:$md) {
+		text-align: center;
 			
 		}
 
@@ -103,7 +110,13 @@
 
 			@media screen and(max-width:$lg) {
 				left: 0;
+				width: 100%;
 			}
+
+			@media screen and(max-width:$md) {
+			
+					
+				}
 
 		}
 	}
@@ -150,6 +163,24 @@
 	@media screen and(min-width:$xxl) {
 		font-size: 20px;
 	}
+
+	@media screen and(max-width:$lg) {
+		padding-left: 4rem;
+		
+	}
+
+	@media screen and(max-width:$md) {
+		padding-left: 0;
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+		@media screen and(max-width: $sm) {
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 2rem;
+		}
 	
 	/* .product-counter__wrap */
 	&__wrap {
@@ -167,9 +198,7 @@
         font-size: 100px;
         color:$colorText-1;
 
-		@media screen and(max-width:$sm) {
-            font-size: 80px;
-        }
+		
 	}
 
 	/* .product-counter__box-right */
@@ -178,6 +207,10 @@
         padding-left: 16px;
         font-size: 15px;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+		@media screen and(max-width:$lg) {
+		padding-top: 20px;
+			
+		}
 	}
 
 

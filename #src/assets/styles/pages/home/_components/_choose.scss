@@ -16,6 +16,7 @@
 
     &__img-wrap{
         margin-bottom: 30px; 
+        
        
         @media screen and(max-width:1620px){
             padding-left: 0;
@@ -23,7 +24,10 @@
 
         @media screen and(max-width:$md){
             padding: 0;
+            display: flex;
+            justify-content: center;
         } 
+
 
         img{
             box-shadow: 0 0 5px #ccc;
@@ -34,6 +38,7 @@
             
          
         }
+        
     }
 
 
