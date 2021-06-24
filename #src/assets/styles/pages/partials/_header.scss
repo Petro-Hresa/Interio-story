@@ -51,7 +51,7 @@
 
             @media screen and (max-width:$lg){
                 border-radius: 50%;
-                background-color: #444444;
+                background-color: $colorText-1;
                 padding: 5px 2px;
             }
         }
